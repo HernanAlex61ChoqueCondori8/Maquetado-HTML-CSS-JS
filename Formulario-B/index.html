@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/Formulario/normalize.css">
+    <link rel="stylesheet" href="/Formulario/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Viga&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <form id="form" method="post" action="">
+            <div id="form-shadow"></div>
+            <div id="form-content-text">
+                <div class="form-div-tittle">
+                    <p>¿Cual es tu nivel de experiencia con estas tecnologias?</p>
+                </div>
+                <div class="form-div-text">
+                    <input class="form-input-text" type="text" placeholder="Nombre" required>
+                    <input class="form-input-text" type="text" placeholder="Apellido" required>
+                </div>
+                <div class="form-div-radio">
+                    <label class="input-radio" for="form-input-radioH"><input id="form-input-radioH" checked value="1" type="radio" name="option"> HTML</label>
+                    <label class="input-radio" for="form-input-radioC"><input  id="form-input-radioC" value="2" type="radio" name="option"> CSS</label>
+                    <label class="input-radio" for="form-input-radioJ"><input id="form-input-radioJ" value="3" type="radio" name="option"> Javascript</label>    
+                </div>
+                <div class="form-div-range">
+                    <input class="form-input-range" min="1" max="5" type="range" class="form-input-range" placeholder="Apellido" required>
+                    <p class="form-input-range-text">Tengo experiencia</p>
+                </div>
+                <div class="form-div-email">
+                    <p>Email: </p>
+                    <input class="form-input-text" type="text" placeholder="Ingresar un mail" required>
+                </div>
+                <div id="form-div-submit">
+                    <button class="form-input-submit" type="submit" disabled>Enviar</button>
+                </div>
+            </div>
+            <div id="form-content-Visual">
+                <div class="form-visual-circle"></div>
+                <div class="form-visual">
+                    <div class="form-visual-first">
+                        <img src="/Formulario/Resources/Html.png" alt="HTML">
+                    </div>
+                    <div class="form-visual-first">
+                        <img src="/Formulario/Resources/Css.png" alt="CSS">
+                    </div>
+                    <div class="form-visual-first">
+                        <img src="/Formulario/Resources/Javascript-modificado.png" alt="JAVASCRIPT">
+                    </div>
+                </div>
+                <div class="form-input-checkbox">
+                    <label for="form-input-checkbox1">
+                        <input type="checkbox" class="input-checkbox" id="form-input-checkbox1" value="false" name="personality">
+                        <strong>Verifico</strong> que esta informacion es verdadera
+                    </label>
+                    <label for="form-input-checkbox2">
+                        <input type="checkbox" class="input-checkbox" id="form-input-checkbox2" value="false" name="personality">
+                        <strong>Aceptar</strong> teminos y condiciones
+                    </label>    
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <script src="/Formulario/script.js"></script>
+</body>
+</html>
