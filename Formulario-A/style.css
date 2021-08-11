@@ -1,0 +1,104 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: rgb(224,175,69);
+    background: linear-gradient(180deg, rgba(224,175,69,1) 0%, rgba(10,40,101,1) 100%);
+}
+
+#container{
+    position: relative;
+    margin: 10px auto;
+    display: flex;
+    max-width: 50rem;
+    min-width: 34.375rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: #253847;
+    color: #FFFFFF;
+    font-family: 'Archivo Narrow', sans-serif;
+    border-radius: 20px;
+}
+
+.container-title{
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    color: #000000;
+    background-image: radial-gradient(circle at 50% 50%, #ffff5d 0, #ffff52 12.5%, #ffea49 25%, #ffd042 37.5%, #f2b53c 50%, #e09b38 62.5%, #cf8535 75%, #c07234 87.5%, #b26233 100%);
+    font-size: 14px;
+    font-family: 'Press Start 2P', cursive;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+}
+
+.container-title > img{
+    width: 12.5rem;
+}
+
+#form{
+    display: flex;
+    margin: 20px 0;
+    flex-direction: column;
+}
+
+.form-div-text{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+}
+
+.form-div-text>h3{
+    margin-right: 8px;
+}
+
+.form-input-text{
+    border: none;
+    background: none;
+    border-bottom: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    outline: none;
+}
+
+.form-input-text:nth-child(2){ /*Porque el indice 2 es el 1?*/
+    margin-right: 40px;
+}
+
+.form-div-radio{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.form-div-radio>input{
+    margin-right: 10px;
+    background-color: red;
+}
+
+.form-input-checkbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-div-range{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-input-range{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+#form-input-submit{
+    margin: 20px auto;
+    width: 40%;
+    text-align: center;
+}

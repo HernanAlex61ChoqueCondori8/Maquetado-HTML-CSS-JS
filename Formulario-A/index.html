@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/Formulario/normalize.css">
+    <link rel="stylesheet" href="/Formulario/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="container">
+        <div class="container-title">
+            <img src="/Formulario/Resources/Image-titulo.png" alt="Desarrollo Web">
+            <h1>¿Cuales son tus habilidades de desarrollo web?</h1>
+        </div>
+        <form id="form" method="post" action="">
+            <div class="form-div-text">
+                <h3>Nombre: </h3>
+                <input class="form-input-text" type="text" placeholder="Nombre" required>
+                <h3>Apellido: </h3>
+                <input class="form-input-text" type="text" placeholder="Apellido" required>
+            </div>
+            <div class="form-div-radio">
+                <label for="form-input-radioH"><input id="form-input-radioH" value="HTML" type="radio" name="option"> HTML</label>
+                <label for="form-input-radioC"><input id="form-input-radioC" value="CSS" type="radio" name="option"> CSS</label>
+                <label for="form-input-radioJ"><input id="form-input-radioJ" value="Javascript" type="radio" name="option"> Javascript</label>    
+            </div>
+            <div class="form-div-range">
+                <input class="form-input-range" min="1" max="5" type="range" class="form-input-range" placeholder="Apellido" required>
+                <h4 class="form-input-range-text">Normal</h4>
+            </div>
+            <div class="form-input-checkbox">
+                <label for="form-input-checkbox1"><input type="checkbox" id="form-input-checkbox1" value="false" name="personality">Verifico que esta informacion es verdadera</label>
+                <label for="form-input-checkbox2"><input type="checkbox" id="form-input-checkbox2" value="false" name="personality">Aceptar teminos y condiciones</label>    
+            </div>
+            <button id="form-input-submit" type="submit" disabled>Enviar</button>
+        </form>
+    </div>
+    
+    <script src="/Formulario/script.js"></script>
+</body>
+</html>
