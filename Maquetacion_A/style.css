@@ -263,6 +263,10 @@
 .show_galery__ul__li__img{
     width: 20vw;
     height: 20vw;
+    transition-duration: 0.5s;
+}
+.show_galery__ul__li__img:hover{
+    transform: rotate(360deg);
 }
 .galery-text{
     position: absolute;
@@ -282,6 +286,10 @@
     height: 40px;
     margin: auto;
     margin-top: 30px;
+    transition-duration: 0.5s;
+}
+.galery-text__img:hover{
+    transform: rotate(180deg);
 }
 /*CSS - Seccion de tabla nutricional*/
 .show-nutrition-table{
