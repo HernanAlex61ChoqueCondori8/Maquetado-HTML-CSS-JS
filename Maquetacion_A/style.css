@@ -13,17 +13,21 @@
 .navigator__ul__li{
     margin: 0 20px;
     font-size: 20px;
+    transition-duration: 0.5s ;
 }
-
 .navigator__ul__li:nth-child(3){
     font-size: 40px;
 }
-
+.navigator__ul__li:hover{
+    transform: scale(1.4);
+}
 .navigator__ul__li__a{
     text-decoration: none;
     color: #000000;
 }
-
+.navigator__ul__li__a:hover{
+    color: #943f39;
+}
 .navigator__ul__li__a__img{
     width: 40px;
     width: 40px;
@@ -50,9 +54,15 @@
     margin: 10px;
     transition-duration: 0.5s;
 }
+.nav-user__ul__li:nth-child(2){
+    transition-duration: 0.5s;
+}
 .nav-user__ul__li:nth-child(1):hover{
     background-color: #afada7;
     transform: scale(1.2);
+}
+.nav-user__ul__li:nth-child(2):hover{
+    transform: scale(1.4);
 }
 .nav-user__ul__li__a{
     text-decoration: none;
@@ -82,8 +92,11 @@
     position: absolute;
     font-size: 400px;
     z-index: 50;
+    transition-duration: 0.5s;
 }
-
+.picture-pres__h1:hover{
+    transform: scale(1.2);
+}
 .picture-pres__img{
     position: relative;
     width: 38vw;
@@ -152,7 +165,9 @@
     flex-direction: column;
 }
 .options-scroll__ul__li{
-    padding: 15px 20px;
+    padding: 15px 0;
+    padding-left: 20px;
+    padding-right: 30px;
     border: solid 1px gray;
     transition-duration: 0.4s;
 }
@@ -267,4 +282,135 @@
     height: 40px;
     margin: auto;
     margin-top: 30px;
+}
+/*CSS - Seccion de tabla nutricional*/
+.show-nutrition-table{
+    background-color: #fae2c4;
+    padding: 50px;
+}
+.container-table-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+.table-tittle{
+    align-self: flex-start;
+    padding: 15px;
+    margin-right: 30px;
+}
+.table-tittle__h2{
+    font-size: 40px;
+}
+.table-tittle__p{
+    font-size: 20px;
+}
+.nutrition-table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+.header-table__ul{
+    list-style: none;
+    width: 40vw;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    transition-duration: 0.5s;
+}
+.header-table__ul:hover{
+    background-color: #943f39;
+    color: #FFFFFF;
+    transform: scale(1.2);
+}
+.header-table__ul__li{
+    width: 10vw;
+    font-size: 20px;
+}
+.header-table__ul__li:nth-child(2){
+    text-align: right;
+}
+.header-table__ul__li:nth-child(3){
+    text-align: right;
+}
+.header-table__hr{
+    border: 0 none #e1c38e;
+    border-top: 3px solid #e1c38e;
+    height: 3px;
+    display: block;
+    clear: both;
+}
+.nutrition-table__ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.nutrition-table__ul__li{
+    width: 40vw;
+    padding: 20px 10px;
+    transition-duration: 0.5s;
+}
+.nutrition-table__ul__li:hover{
+    background-color: #dbad70;
+    transform: scale(1.2);
+}
+.info-fruit{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.info-fruit__p{
+    width: 10vw;
+    font-size: 20px;
+}
+
+.info-fruit__p:nth-child(0n+2){
+    text-align: right;
+}
+.info-fruit__p:nth-child(0n+3){
+    text-align: right;
+}
+/*CSS - Boton ver mas de la tabla de informacion nutritiva*/
+.tabla-orden-option{
+    background-color: #fae2c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tabla-orden-option__a{
+    background-color: #f7f5f0;
+    text-decoration: none;
+    color: black;
+    padding: 10px 80px;
+    margin: 20px 0;
+    transition-duration: 0.5s;
+}
+.tabla-orden-option__a:hover{
+    background-color: #afada7;
+    transform: scale(1.2);
+}
+/*CSS - Pie de pagina*/
+.footer-page{
+    background-color: #fae2c4;
+    display: flex;
+}
+.footer-option{
+    flex-basis: 50%;
+    padding: 40px 20px;
+}
+.footer-option__a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+.copyright{
+    flex-basis: 50%;
+    text-align: right;
+    padding: 40px 20px;
 }
